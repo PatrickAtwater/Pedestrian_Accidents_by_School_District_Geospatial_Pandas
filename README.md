@@ -1,41 +1,27 @@
-### 1. Getting Started With the Geospatial Environment
-To run the notebooks for this project, you will need some additional python packages. 
-You can install these using conda. 
-We have provided an `environment.yaml` file with the packages to be used for the project.
-This `environment.yaml` file will create a new environment for you called `geospatial`.
+## Geospatial Python (Pandas) Project
 
-Open your terminal, and `cd` into this project. 
-From there run: 
-```bash
-conda env create -f environment.yaml
-```
+In this project, The [data.nashville.gov](data.nashville.gov) open data portal was used to explore the Geospatial Environment in Python Pandas.
 
-Once this has been created for you, it is easiest to run from the command line.
-For example, to open a new session with jupyter run: 
-```
-conda activate geospatial
-jupyter notebook
-```
-To close the notebook, type ctrl-c
-To stop using the geospatial environment:
-```
-conda deactivate
-```
+The data selected for this project were:
+
+1. Traffic Accidents
+2. Metro Nashville School districts
+
+After selecting the data, they were brought into the Geospatial environment and examined. 
+
+### **Data question:**
+Which school districts have the highest rate of pedestrian accidents?<br /> This question was chosen because parents would likely want to choose school districts with less frequent pedestrian accidents for their children walking to and from school. 
+
+### **Sample of Pandas Notebook for Map**
+
+![image](https://user-images.githubusercontent.com/83980785/128107056-b76fd2e4-feb3-43dd-8dca-9b6fab5a289f.png)
 
 
-### 2. Introduction slide deck and notebooks  
-##### slides 
- - importance of location to some kinds of analysis
- - `geopandas` GeoDataFrames
- - types of geometry
- - intro to coordinate reference systems
- - spatial joins
- - adding context with `folium` maps
-    - constructing maps
-    - markers
-    - marker clusters
-    - popups
-##### notebooks
-- geospatial_intro.ipynb (geopandas and foilum)
-- qualitative_maps.ipynb (geopandas and matplotlib styling elements)
-- choropleth_tutorial.ipynb (geopandas choropleth)
+### **Map of Accidents in School District 5**
+![image](https://user-images.githubusercontent.com/83980785/128107597-c47e85d3-0a5d-45e0-a7e3-8b6f72128b1f.png)
+### **Cluster Map of Accidents by School District**
+![image](https://user-images.githubusercontent.com/83980785/128107675-16592436-12da-4bfe-94cd-8f768931eb53.png)
+
+## **Conclusion**
+
+Based on the above maps, it is clear that Metro Nashville School District 5 has had the most pedestrian Accidents in 2021. **Be careful out there kids!**
